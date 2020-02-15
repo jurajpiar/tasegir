@@ -40,7 +40,6 @@ module.exports = {
     'no-nested-ternary': 'warn',
     'no-only-tests/no-only-tests': 'error',
     'no-script-url': 'error',
-    'no-shadow': 'error',
     'no-warning-comments': 'warn',
     'quote-props': ['error', 'as-needed'],
     'require-yield': 'error',
@@ -54,8 +53,10 @@ module.exports = {
     ],
     'no-useless-constructor': 'off',
     'no-dupe-class-members': 'off',
+    'no-unused-expressions': 'off',
     '@typescript-eslint/ban-ts-ignore': 'warn',
     '@typescript-eslint/no-useless-constructor': 'error',
+    '@typescript-eslint/no-unused-expressions': 'error',
     '@typescript-eslint/member-delimiter-style': ['error', {
       'multiline': {
         'delimiter': 'none',
