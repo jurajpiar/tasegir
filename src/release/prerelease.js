@@ -30,6 +30,7 @@ async function evaluateGhtoken (value) {
   }
 
   const cmd = value.replace('shell:', '')
+  console.log(`Executing command to retrieve GitHub token: ${cmd}`)
   const result = await execa(cmd, [], {
     shell: true,
   })
