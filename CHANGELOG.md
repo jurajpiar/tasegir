@@ -1,3 +1,21 @@
+<a name="1.7.0"></a>
+# [1.7.0](https://github.com/auhau/tasegir/compare/v1.6.0...v1.7.0) (2020-03-05)
+
+
+### Bug Fixes
+
+* **eslint:** use ts version of no-unsued-expression ([f6fa290](https://github.com/auhau/tasegir/commit/f6fa290))
+* capture console in browser tests for debugging ([530846f](https://github.com/auhau/tasegir/commit/530846f))
+
+
+### Features
+
+* notification of execution of shell command for ghtoken ([6ee18f6](https://github.com/auhau/tasegir/commit/6ee18f6))
+* **ts:** enable decorators and json modules ([5d05386](https://github.com/auhau/tasegir/commit/5d05386))
+* adding no-shadow rule ([71e375c](https://github.com/auhau/tasegir/commit/71e375c))
+
+
+
 <a name="1.6.0"></a>
 # [1.6.0](https://github.com/auhau/tasegir/compare/v1.5.2...v1.6.0) (2020-01-04)
 
