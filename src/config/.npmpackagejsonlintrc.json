@@ -33,12 +33,6 @@
       "bin-type": "error",
       "files-type": "error",
       "version-type": "error",
-      "valid-values-engines": ["error", [
-        {
-          "node": ">=10.0.0",
-          "npm": ">=6.0.0"
-        }
-      ]],
       "valid-values-license": ["error", [
         "MIT"
       ]],
