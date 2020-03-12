@@ -73,6 +73,7 @@ module.exports = {
       files: ['*.spec.ts'],
       rules: {
         '@typescript-eslint/ban-ts-ignore': 'off',
+        '@typescript-eslint/no-non-null-assertion': 'off',
         'max-nested-callbacks': ['error', 10] // allow describe/it nesting
       }
     }
