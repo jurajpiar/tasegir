@@ -16,6 +16,7 @@ const FILES = [
   '*.ts',
   '*.tsx',
   'bin/**',
+  '!bin/*.cmd',
   'config/**/*.ts',
   'config/**/*.tsx',
   'test/**/*.ts',
