@@ -1,3 +1,13 @@
+<a name="1.7.1"></a>
+## [1.7.1](https://github.com/auhau/tasegir/compare/v1.7.0...v1.7.1) (2020-03-24)
+
+
+### Bug Fixes
+
+* **lint:** not linting *.cmd bin files ([4121034](https://github.com/auhau/tasegir/commit/4121034))
+
+
+
 <a name="1.7.0"></a>
 # [1.7.0](https://github.com/auhau/tasegir/compare/v1.6.0...v1.7.0) (2020-03-05)
 
