@@ -45,7 +45,7 @@ module.exports = {
     'require-yield': 'error',
     'max-nested-callbacks': ['error', 4],
     'max-depth': ['error', 4],
-    'require-await': 'error',
+    'require-await': 'warn',
     'padding-line-between-statements': [
       'error',
       { 'blankLine': 'always', 'prev': '*', 'next': 'if' },
