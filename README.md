@@ -68,6 +68,11 @@ As TypeScript needs to be compiled to run, there are several options how to do t
  - If you want just do an type analysis you can run [`types-check`](#types-check) task. 
  - If you want to execute some TS file, you can use [`run`](#run) task to execute specific file.
 
+### Custom types
+
+If you need to use custom typings (eq. not official or community typings like `@types/...` npm packages) for some of your dependencies
+put the to `/src/@types` folder. If you don't than `test` and `run` task might fail for missing typings.
+
 ## Configuration
 
 ### Local configuration
