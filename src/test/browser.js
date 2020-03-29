@@ -33,6 +33,7 @@ module.exports = (argv) => {
           NODE_ENV: process.env.NODE_ENV || 'test',
           TASEGIR_RUNNER: argv.webworker ? 'webworker' : 'browser'
         },
+        cwd: process.cwd(),
         localDir: path.join(__dirname, '../..'),
         stdio: 'inherit'
       })

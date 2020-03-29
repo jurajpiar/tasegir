@@ -15,7 +15,7 @@ const VerboseRenderer = require('listr-verbose-renderer')
 const execa = require('execa')
 const os = require('os')
 
-const { package: pkg, path: pkgPath } = readPkgUp.sync({
+const { packageJson: pkg, path: pkgPath } = readPkgUp.sync({
   cwd: fs.realpathSync(process.cwd())
 })
 const PKG_FILE = 'package.json'
