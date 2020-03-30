@@ -1,5 +1,5 @@
-const { fromRoot } = require('./utils')
-const tsconfig = require('./config/tsconfig.js')
+const { fromRoot } = require('../utils')
+const tsconfig = require('../config/tsconfig.js')
 const execa = require('execa')
 const globby = require('globby')
 const path = require('path')

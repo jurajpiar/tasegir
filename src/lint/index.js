@@ -5,8 +5,8 @@ const globby = require('globby')
 const { CLIEngine } = require('eslint')
 const execa = require('execa')
 
-const userConfig = require('./config/user')
-const { fromTasegir, fromRoot } = require('./utils')
+const userConfig = require('../config/user')
+const { fromTasegir, fromRoot } = require('../utils')
 const formatter = CLIEngine.getFormatter()
 
 const resolveBin = require('resolve-bin')
@@ -93,7 +93,7 @@ function checkDependencyVersions () {
 function runLinter (opts = {}) {
   const cli = new CLIEngine({
     useEslintrc: true,
-    baseConfig: require('./config/eslintrc.js'),
+    baseConfig: require('../config/eslintrc.js'),
     fix: opts.fix
   })
 

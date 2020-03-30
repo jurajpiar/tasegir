@@ -1,6 +1,6 @@
 const execa = require('execa')
 const path = require('path')
-const tsconfig = require('./config/tsconfig.js')
+const tsconfig = require('../config/tsconfig.js')
 
 module.exports = function (argv) {
   const compilerOptions = tsconfig(true).compilerOptions
