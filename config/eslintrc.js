@@ -13,7 +13,8 @@ module.exports = {
     ecmaVersion: 2018,
   },
   plugins: [
-    'no-only-tests'
+    'no-only-tests',
+    'todos'
   ],
   rules: {
     'array-bracket-newline': ['error', { 'multiline': true }],
@@ -40,7 +41,7 @@ module.exports = {
     'no-nested-ternary': 'warn',
     'no-only-tests/no-only-tests': 'error',
     'no-script-url': 'error',
-    'no-warning-comments': 'warn',
+    'todos/only-documented-todos': 'warn',
     'quote-props': ['error', 'as-needed'],
     'require-yield': 'error',
     'max-nested-callbacks': ['error', 4],

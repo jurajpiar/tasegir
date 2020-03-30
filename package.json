@@ -10,7 +10,7 @@
     "build"
   ],
   "homepage": "https://github.com/auhau/tasegir",
-  "bugs": "https://github.com/ipfs/auhau/tasegir",
+  "bugs": "https://github.com/auhau/tasegir/issues",
   "license": "MIT",
   "leadMaintainer": "Adam Uhlíř <adam@uhlir.dev>",
   "files": [
@@ -84,6 +84,7 @@
     "eslint-plugin-node": "^11.0.0",
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-standard": "^4.0.1",
+    "eslint-plugin-todos": "^0.1.0",
     "execa": "^4.0.0",
     "filesize": "^6.1.0",
     "findup-sync": "^4.0.0",
