@@ -91,13 +91,15 @@ function checkDependencyVersions () {
 }
 
 function runLinter (opts = {}) {
+  const config = userConfig()
+
   const cli = new CLIEngine({
     useEslintrc: true,
     baseConfig: require('../../config/eslintrc.js'),
-    fix: opts.fix
+    fix: opts.fix,
+
   })
 
-  const config = userConfig()
   const patterns = (config.lint && config.lint.files) || FILES
   return globby(patterns)
     .then(files => {
@@ -110,6 +112,11 @@ function runLinter (opts = {}) {
       if (report.errorCount > 0) {
         throw new Error('Lint errors')
       }
+
+      if (report.warningCount > config.lint.warningLimit) {
+        throw new Error('Limit of warnings excited!')
+      }
+
       return report
     })
 }

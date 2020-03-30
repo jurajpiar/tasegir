@@ -75,7 +75,9 @@ function userConfig () {
     webpack: {},
     karma: {},
     hooks: {},
-    lint: {},
+    lint: {
+      warningLimit: 20
+    },
     depCheck: {},
     tsconfig: {},
     entry: utils.fromRoot('src', 'index.ts'),
