@@ -4,7 +4,7 @@ const git = require('simple-git')(process.cwd())
 const pify = require('pify')
 const inquirer = require('inquirer')
 const execa = require('execa')
-const globalConfig = require('../config/global')
+const globalConfig = require('../../config/global')
 
 const GHTOKEN_QUESTION = [
   {

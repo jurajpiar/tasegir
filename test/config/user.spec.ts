@@ -43,7 +43,7 @@ describe('config - user', () => {
       }
     })
 
-    config = mock.reRequire('../../src/config/user')()
+    config = mock.reRequire('../../config/user')()
   })
 
   after(() => {
@@ -111,7 +111,7 @@ describe('config - user with async hooks', () => {
       }
     })
 
-    config = mock.reRequire('../../src/config/user')()
+    config = mock.reRequire('../../config/user')()
   })
 
   after(() => {

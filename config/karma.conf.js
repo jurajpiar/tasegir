@@ -3,7 +3,7 @@
 const merge = require('webpack-merge')
 const webpack = require('webpack')
 const webpackConfig = require('./webpack.config')
-const { fromRoot, hasFile } = require('../utils')
+const { fromRoot, hasFile } = require('../src/utils')
 const userConfig = require('./user')()
 
 const isProduction = process.env.NODE_ENV === 'production'

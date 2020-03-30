@@ -1,7 +1,7 @@
 'use strict'
 
 const { fromRoot } = require('../src/utils')
-const tsconfig= require('../src/config/tsconfig')
+const tsconfig= require('../config/tsconfig')
 const execa = require('execa')
 const path = require('path')
 const globby = require('globby')

@@ -5,7 +5,7 @@ const globby = require('globby')
 const { CLIEngine } = require('eslint')
 const execa = require('execa')
 
-const userConfig = require('../config/user')
+const userConfig = require('../../config/user')
 const { fromTasegir, fromRoot } = require('../utils')
 const formatter = CLIEngine.getFormatter()
 
@@ -93,7 +93,7 @@ function checkDependencyVersions () {
 function runLinter (opts = {}) {
   const cli = new CLIEngine({
     useEslintrc: true,
-    baseConfig: require('../config/eslintrc.js'),
+    baseConfig: require('../../config/eslintrc.js'),
     fix: opts.fix
   })
 
@@ -119,7 +119,7 @@ function packageJsonLinting (argv) {
   const forwardOptions = argv['--'] ? argv['--'] : []
   const useBuiltinConfig = !forwardOptions.includes('--configFile')
   const config = useBuiltinConfig
-    ? ['-c', fromTasegir('src/config/.npmpackagejsonlintrc.json')]
+    ? ['-c', fromTasegir('config/.npmpackagejsonlintrc.json')]
     : []
 
   return execa(packageJsonLintBin, [

@@ -15,6 +15,7 @@
   "leadMaintainer": "Adam Uhlíř <adam@uhlir.dev>",
   "files": [
     "cmds",
+    "config",
     "src",
     "cli.js",
     "fixtures.js"

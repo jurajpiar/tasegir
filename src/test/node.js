@@ -3,7 +3,7 @@
 const execa = require('execa')
 const path = require('path')
 const { hook } = require('../utils')
-const tsconfig = require('../config/tsconfig.js')
+const tsconfig = require('../../config/tsconfig.js')
 
 const DEFAULT_TIMEOUT = global.DEFAULT_TIMEOUT || 5 * 1000
 
@@ -24,7 +24,7 @@ function testNode (ctx) {
     exec = 'nyc'
     args = [
       // TODO: This should be found using fromTasegir(), but currently absolute paths are not allowed.
-      `--nycrc-path='./node_modules/tasegir/src/config/.nycrc'`,
+      `--nycrc-path='./node_modules/tasegir/config/.nycrc'`,
     ]
 
     if (ctx.reporter) {

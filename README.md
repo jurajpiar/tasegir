@@ -121,8 +121,8 @@ It has following possible values:
 
 If you use an IDE that has support for the tools used, you can point your IDE towards the proper configuration files.
 
- - `./node_modules/tasegir/src/config/eslintrc.js` for ESlint
- - `./node_modules/tasegir/src/config/tsconfig.json` for TypeScript
+ - `./node_modules/tasegir/config/eslintrc.js` for ESlint
+ - `./node_modules/tasegir/config/tsconfig.json` for TypeScript
 
 ## Tasks
 
@@ -150,7 +150,7 @@ Linting happens in three phases:
   - Code linting
 
 Code linting uses [eslint](http://eslint.org/), [standard](https://github.com/feross/standard), [typescript-eslint](https://github.com/typescript-eslint/typescript-eslint/tree/master/packages/eslint-plugin)
-with [some custom rules](https://github.com/auhau/tasegir/tree/master/src/config/eslintrc.js) to enforce some more strictness.
+with [some custom rules](https://github.com/auhau/tasegir/tree/master/config/eslintrc.js) to enforce some more strictness.
 
 You can run it using
 

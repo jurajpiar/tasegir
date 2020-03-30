@@ -2,7 +2,7 @@
 const path = require('path')
 const execa = require('execa')
 const { hook } = require('../utils')
-const tsconfig = require('../config/tsconfig.js')
+const tsconfig = require('../../config/tsconfig.js')
 
 module.exports = (argv) => {
   const input = argv._.slice(1)

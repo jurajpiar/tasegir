@@ -7,7 +7,7 @@ const vinyl = require('vinyl-fs')
 const streamArray = require('stream-array')
 
 const utils = require('../utils')
-const introTmpl = require('../config/intro-template.md')
+const introTmpl = require('../../config/intro-template.md')
 
 function generateDescription (pkg) {
   let example

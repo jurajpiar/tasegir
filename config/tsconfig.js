@@ -1,5 +1,5 @@
 const fs = require('fs-extra')
-const { fromTasegir, fromRoot } = require('../utils')
+const { fromTasegir, fromRoot } = require('../src/utils')
 const userConfig = require('./user')
 const _ = require('lodash')
 
@@ -22,7 +22,7 @@ function compilerCliOptions () {
 }
 
 function options (types = false) {
-  let defaultOptions = fs.readJsonSync(fromTasegir('src', 'config', 'tsconfig.json'))
+  let defaultOptions = fs.readJsonSync(fromTasegir('config', 'tsconfig.json'))
 
   if (types) {
     const typeRoots = [

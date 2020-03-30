@@ -3,7 +3,7 @@
 const _ = require('lodash')
 const Joi = require('@hapi/joi')
 const { promisify } = require('es6-promisify')
-const utils = require('../utils')
+const utils = require('../src/utils')
 
 const hookSchema = Joi.object().keys({
   pre: Joi.func(),
@@ -68,26 +68,17 @@ function normalizeHooks (hooks) {
   throw new Error(`Found unknown keys in hook definiton: "${keys.join(' ')}"`)
 }
 
-function userConfig () {
-  const config = utils.getUserConfig()
+function globalConfig () {
+  const config = utils.getGlobalConfig()
 
-  const user = _.defaultsDeep({}, config, {
-    webpack: {},
-    karma: {},
+  const global = _.defaultsDeep({}, config, {
     hooks: {},
-    lint: {},
-    depCheck: {},
-    tsconfig: {},
-    entry: utils.fromRoot('src', 'index.ts'),
-    bundlesize: {
-      path: './dist/index.min.js',
-      maxSize: '100kB'
-    }
+    release: {}
   })
 
-  user.hooks = normalizeHooks(user.hooks)
+  global.hooks = normalizeHooks(global.hooks)
 
-  return user
+  return global
 }
 
-module.exports = userConfig
+module.exports = globalConfig

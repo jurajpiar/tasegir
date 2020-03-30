@@ -6,7 +6,7 @@ const merge = require('webpack-merge')
 const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer')
 const StatsPlugin = require('stats-webpack-plugin')
 const TerserPlugin = require('terser-webpack-plugin')
-const { fromRoot, pkg, paths, getLibraryName } = require('../utils')
+const { fromRoot, pkg, paths, getLibraryName } = require('../src/utils')
 const userConfig = require('./user')()
 const isProduction = process.env.NODE_ENV === 'production'
 

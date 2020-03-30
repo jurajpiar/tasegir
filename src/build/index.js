@@ -4,7 +4,7 @@ const path = require('path')
 const execa = require('execa')
 const rimraf = require('rimraf')
 const { fromTasegir } = require('./../utils')
-const userConfig = require('../config/user')
+const userConfig = require('../../config/user')
 
 const config = userConfig()
 
@@ -15,7 +15,7 @@ module.exports = (argv) => {
   const useBuiltinConfig = !forwardOptions.includes('--config')
   const progress = !forwardOptions.includes('--progress') && !process.env.CI ? ['--progress'] : []
   const webpackConfig = useBuiltinConfig
-    ? ['--config', fromTasegir('src/config/webpack.config.js')]
+    ? ['--config', fromTasegir('config/webpack.config.js')]
     : []
 
   // Clean dist

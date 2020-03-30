@@ -1,5 +1,5 @@
 'use strict'
-const { pkg, browserslist } = require('./../utils')
+const { pkg, browserslist } = require('../src/utils')
 
 module.exports = function (opts = {}) {
   const env = process.env.BABEL_ENV || process.env.NODE_ENV

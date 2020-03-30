@@ -1,5 +1,5 @@
 'use strict'
-const userConfig = require('../config/user')
+const userConfig = require('../../config/user')
 const path = require('path')
 const execa = require('execa')
 

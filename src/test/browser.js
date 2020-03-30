@@ -18,7 +18,7 @@ module.exports = (argv) => {
     .then(() => {
       return execa('karma', [
         'start',
-        fromTasegir('src/config/karma.conf.js'),
+        fromTasegir('config/karma.conf.js'),
         ...watch,
         ...files,
         ...verbose,
