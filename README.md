@@ -121,11 +121,20 @@ It has following possible values:
 ## IDE support
 
 If you use an IDE that has support for the tools used, you can point your IDE towards the proper configuration files.
-
- - `./node_modules/tasegir/config/eslintrc.js` for ESlint
- - `./node_modules/tasegir/config/tsconfig.json` for TypeScript
+For that check out the [`init`](#init) task which can help you with symlinking the configuration files to the root
+of the project where most of the IDEs are expecting them.
 
 ## Tasks
+
+### Init
+
+Command which helps you setup some goodies of `tasegir`. Usually is needed to run only once per clonned repo. It offers you
+things like:
+
+ - symlinking `eslintrc.js`
+ - symlinking `tsconfig.json`
+ 
+Just run `tasegir init` and it will guide you through the process.
 
 ### Compile
 
