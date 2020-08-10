@@ -1,3 +1,12 @@
+## [1.7.2](https://github.com/auhau/tasegir/compare/v1.7.1...v1.7.2) (2020-08-10)
+
+
+### Bug Fixes
+
+* **build:** add bugfixes flag to babelconfig ([3a5cbd2](https://github.com/auhau/tasegir/commit/3a5cbd21e0e43b1b6a56e4ee5d98188781b98ece))
+
+
+
 <a name="1.7.1"></a>
 ## [1.7.1](https://github.com/auhau/tasegir/compare/v1.7.0...v1.7.1) (2020-03-24)
 
