@@ -11,6 +11,14 @@ module.exports = {
   desc: 'Compile TypeScript to JavaScript',
   builder: (yargs) => {
     yargs
+      .options({
+        declarations: {
+          alias: 'd',
+          type: 'boolean',
+          describe: 'Should by types declarations be output to "types" folder.',
+          default: false
+        }
+      })
       .epilog(EPILOG)
       .example('npx tasegir compile -- --watch', 'To continuously watch changes.')
   },

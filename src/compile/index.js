@@ -5,16 +5,16 @@ const globby = require('globby')
 const path = require('path')
 const rimraf = require('rimraf')
 
-const isProduction = process.env.NODE_ENV === 'production'
 const COMPILE_DIR = fromRoot('lib')
 
 module.exports = async function compile (argv) {
+  const isProduction = process.env.NODE_ENV === 'production'
   const forwardOptions = argv['--'] ? argv['--'] : []
 
   // Clean-up
   rimraf.sync(COMPILE_DIR)
 
-  if (isProduction) {
+  if (isProduction || argv.declarations) {
     forwardOptions.push('--declaration', '--declarationDir', fromRoot('types'))
   }
 

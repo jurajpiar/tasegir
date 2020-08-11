@@ -1,3 +1,17 @@
+# [1.8.0](https://github.com/auhau/tasegir/compare/v1.7.2...v1.8.0) (2020-08-11)
+
+
+### Bug Fixes
+
+* **compile:** detect NODE_ENV in runtime ([610113c](https://github.com/auhau/tasegir/commit/610113c4fa167ad2bf0cdffe2ed35086f2da3163))
+
+
+### Features
+
+* **compile:** expose declarations flag ([3662f68](https://github.com/auhau/tasegir/commit/3662f682243b5f39345de3a7d361225e4725ea45))
+
+
+
 ## [1.7.2](https://github.com/auhau/tasegir/compare/v1.7.1...v1.7.2) (2020-08-10)
 
 
