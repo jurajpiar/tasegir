@@ -14,7 +14,7 @@ module.exports = async function compile (argv) {
   // Clean-up
   rimraf.sync(COMPILE_DIR)
 
-  if (isProduction) {
+  if (isProduction || argv.declarations) {
     forwardOptions.push('--declaration', '--declarationDir', fromRoot('types'))
   }
 
