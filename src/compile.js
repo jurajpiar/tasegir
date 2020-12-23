@@ -31,6 +31,7 @@ module.exports = async function compile (argv) {
   return execa('tsc', args, {
     stdio: 'inherit',
     cwd: process.cwd(),
-    localDir: path.join(__dirname, '..')
+    localDir: path.join(__dirname, '..'),
+    preferLocal: true
   })
 }

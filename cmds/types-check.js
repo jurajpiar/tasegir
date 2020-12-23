@@ -27,7 +27,9 @@ module.exports = {
       ...forwardOptions,
       ...paths
     ], {
-      stdio: 'inherit'
+      stdio: 'inherit',
+      localDir: path.join(__dirname, '..'),
+      preferLocal: true
     })
   }
 }

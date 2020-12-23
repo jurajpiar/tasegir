@@ -88,7 +88,7 @@ module.exports = {
     files: [], // Globby list of paths to check allowing overriding the default setting
     ignore: [] // Array of modules to ignore, '*' is supported for globbing. Overrides the default setting.
   },
-  tsconfig: {}, // Place for tsconfig.json configuration, only compilerOptions are used though.
+  tsconfig: { compilerOptions: {...} }, // Place for tsconfig.json configuration, only compilerOptions are used though.
   entry: utils.fromRoot('src', 'index.ts'), // Entry point 
 }
 ``` 
