@@ -1,3 +1,7 @@
+# [1.9.0](https://github.com/auhau/tasegir/compare/v1.8.0...v1.9.0) (2020-12-23)
+
+
+
 # [1.8.0](https://github.com/auhau/tasegir/compare/v1.7.2...v1.8.0) (2020-08-11)
 
 
